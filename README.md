@@ -103,12 +103,6 @@ pip install torch torchvision opencv-python matplotlib numpy
 
 ---
 
-## 🖼️ Demo
-
-_A happy monkey classifying banana peels and plastic bottles!_ 🍌🧃
-
----
-
 ## 📚 Future Enhancements
 
 - Multi-class waste classification
