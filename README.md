@@ -1,16 +1,16 @@
-# 🗑️ Real-Time Waste Classification using MobileNetV2
+# Real-Time Waste Classification using MobileNetV2
 
 Classify waste as **Organic** or **Recyclable** in real-time using a webcam feed. This project leverages a lightweight deep learning model (MobileNetV2) and PyTorch to enable fast, accurate image classification of waste for better environmental impact.
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 This project aims to automate waste sorting using deep learning. A MobileNetV2 model is trained to distinguish between **organic** and **recyclable** waste from image data. Once trained, the model is deployed via webcam for real-time inference.
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
 - **Base Model**: `MobileNetV2` (pre-trained on ImageNet)
 - **Fine-tuned**: Only classifier layers
@@ -18,7 +18,7 @@ This project aims to automate waste sorting using deep learning. A MobileNetV2 m
 
 ---
 
-## 📂 Dataset Structure
+## Dataset Structure
 
 Organize your dataset as follows:
 
@@ -36,7 +36,7 @@ Each folder contains images of the corresponding waste category.
 
 ---
 
-## 🧼 Image Preprocessing
+## Image Preprocessing
 
 Images are resized and normalized to match MobileNetV2's requirements:
 
@@ -51,7 +51,7 @@ transforms.Compose([
 
 ---
 
-## 🏋️ Training
+## Training
 
 - Model trained using PyTorch with the **Adam optimizer**
 - Loss function: `CrossEntropyLoss`
@@ -61,7 +61,7 @@ Training code is located in `Training.ipynb`.
 
 ---
 
-## 📷 Real-Time Inference
+## Real-Time Inference
 
 Using `cv2.VideoCapture`, the trained model is deployed to classify images captured from the webcam in real-time.
 
@@ -75,7 +75,7 @@ Code available in `ModelTest.ipynb`.
 
 ---
 
-## 🧾 Required Libraries
+## Required Libraries
 
 Make sure you have the following Python packages installed:
 
@@ -85,7 +85,7 @@ pip install torch torchvision opencv-python matplotlib numpy
 
 ---
 
-## 💡 Key Features
+## Key Features
 
 - ⚡ Fast and lightweight model
 - 🔁 Real-time classification via webcam
@@ -94,7 +94,7 @@ pip install torch torchvision opencv-python matplotlib numpy
 
 ---
 
-## 📌 How to Run
+## How to Run
 
 1. Clone this repository.
 2. Place your dataset in the `Data/` folder.
@@ -103,7 +103,7 @@ pip install torch torchvision opencv-python matplotlib numpy
 
 ---
 
-## 📚 Future Enhancements
+## Future Enhancements
 
 - Multi-class waste classification
 - Dataset expansion with more categories
